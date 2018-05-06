@@ -12,5 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('landing');
+})->name('landing');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/picture', [
+   'as' => 'edit.picture',
+    'uses' => 'PictureController@index'
+]);
+
+Route::post('/picture', [
+    'as' => 'store.picture',
+    'uses' => 'PictureController@store'
+]);
