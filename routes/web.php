@@ -28,3 +28,5 @@ Route::post('/picture', [
     'as' => 'store.picture',
     'uses' => 'PictureController@store'
 ]);
+
+include "test.php";
