@@ -12,3 +12,15 @@
         </div>
     </div>
 @endsection
+
+@section('scripts')
+    <script language="JavaScript">
+        Webcam.attach('#my_camera');
+
+        function take_snapshot() {
+            Webcam.snap(function (data_uri) {
+                document.getElementById('my_result').innerHTML = '<img src="' + data_uri + '"/>';
+            });
+        }
+    </script>
+@endsection
