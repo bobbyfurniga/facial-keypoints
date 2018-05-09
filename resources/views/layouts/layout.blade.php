@@ -42,7 +42,7 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav scrollto">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="/">Home</a></li>
                             <li><a href="{{route('edit.picture')}}">Edit pictures</a></li>
                             <li><a href="{{route('landing')}}">Live effects</a></li>
                             <li><a href="#">About</a></li>
@@ -127,6 +127,8 @@
 <script src="assets/js/counter.js"></script>
 <script src="assets/js/flexslider.js"></script>
 <script src="assets/js/common.js"></script>
+<script src="js/webcam.js"></script>
+
 <script src="js/facial.js"></script>
 @yield('scripts')
 </body>
