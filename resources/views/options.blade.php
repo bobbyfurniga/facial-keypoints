@@ -1,7 +1,6 @@
 <div class="effects panel-body">
 
     @if(isset($effects))
-        <?php //dd($effects) ?>
 
         @foreach($effects as $effect)
             <div class="effect-wrapper text-center panel-body">

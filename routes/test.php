@@ -8,6 +8,7 @@
 
 Route::get('/test', function () {
 
+
     $python = 'C:\\Users\\123Bl\\AppData\\Local\\Programs\\Python\\Python36\\python.exe';
     $file = 'C:\\projects\\facial-keypoints\\resources\\pymodule\\modules.py';
     $image = 'C:\\projects\\facial-keypoints\\resources\\pymodule\\Images\\Paar.jpg';
