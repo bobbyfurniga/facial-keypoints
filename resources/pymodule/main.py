@@ -3,7 +3,6 @@ import sys
 from pathlib import Path
 from PIL import Image
 import numpy as np
-import json
 
 
 def main(argv):
@@ -17,7 +16,7 @@ def main(argv):
 
 		if file.is_file():
 			#print(file_path)
-			 get_result(file_path)
+			get_result(file_path)
 		else:
 			print('There is no file at the provided path')  # doesn't exist
 
@@ -32,10 +31,8 @@ def get_result(file):
 
 	faces = network.fetchFaces()
 	results = network.fetchKeyPoints()
-	#print(faces)
-	#print(';')
-	#print(results)
-	print(json.dumps({'faces': faces.tolist(), 'results': results.tolist()}))
+	print(faces)
+	print(results)
 	#return [faces, results]
 
 

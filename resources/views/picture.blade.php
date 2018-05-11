@@ -1,7 +1,9 @@
 @extends('layouts.layout')
 
 @section('content')
-    {{--<div class="container">--}}
+
+    @include('page_banner', ['extraClass' => 'edit_picture_banner', 'text' => 'Edit Pictures'])
+    <main id="maincontent">
         <div class="featured">
             <div class="row">
                 <div class="col-md-4 effects-container">
@@ -12,7 +14,7 @@
                 </div>
             </div>
         </div>
-    {{--</div>--}}
+    </main>
 @endsection
 
 @section('scripts')

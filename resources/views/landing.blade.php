@@ -3,6 +3,8 @@
 
 
 @section('content')
-    @include('banner')
-
+    @include('page_banner', ['extraClass' => 'landing_banner', 'text' =>'Facial Keypoints'])
+    <main id="maincontent">
+        @include('banner')
+    </main>
 @endsection

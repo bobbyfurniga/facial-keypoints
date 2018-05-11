@@ -51,3 +51,8 @@
 .picture-buttons{
     padding: 30px;
 }
+
+.landing_banner{
+    background: url("/assets/images/home/landing_banner.jpg");
+    background-position: center;
+}
