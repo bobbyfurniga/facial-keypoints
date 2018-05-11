@@ -5,7 +5,7 @@
                 <div class="banner-content text-center">
                     <h1>Welcome to
                         <br/> Facial Keypoints</h1>
-                    <p>You can edit your pictures or live stream effects on your face! </p>
+                    <p>You can edit your pictures with various effects applied by our face detection algorithm! </p>
                 </div>
                 {{--<div class="job-search">--}}
                     {{--<div class="form-group col-md-6 padding-left b-r radius">--}}
@@ -26,12 +26,12 @@
                 {{--</div>--}}
 
                 <div class="row">
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-12 text-center">
                         <a href="#" class="btn btn-default banner-link">Edit pictures</a>
                     </div>
-                    <div class="col-md-6 text-center">
-                        <a href="#" class="btn btn-default banner-link">Live effects</a>
-                    </div>
+                    {{--<div class="col-md-6 text-center">--}}
+                        {{--<a href="#" class="btn btn-default banner-link">Live effects</a>--}}
+                    {{--</div>--}}
                 </div>
             </div>
         </div>
