@@ -56,3 +56,11 @@
     background: url("/assets/images/home/landing_banner.jpg");
     background-position: center;
 }
+
+#maincontent{
+    padding: 0;
+}
+
+.footer-bottom{
+    margin: 0;
+}
