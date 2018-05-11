@@ -25,4 +25,11 @@
     {{--});--}}
     {{--}--}}
     {{--</script>--}}
+
+    <script>
+        window.imageUrl = '{{$image ?? null}}';
+        window.imagePoints = {!! $points ?? 0!!};
+    </script>
+
+    <script src="js/draw.js"></script>
 @endsection

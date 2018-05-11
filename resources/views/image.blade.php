@@ -23,7 +23,7 @@
         </div>
 
         <div class="col-md-4 text-center">
-            <a href="" class="btn btn-default picture-buttons">Download</a>
+            <a href="" id="download-btn" class="btn btn-default picture-buttons">Download</a>
         </div>
     </div>
 </div>
@@ -52,7 +52,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button"  class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
 

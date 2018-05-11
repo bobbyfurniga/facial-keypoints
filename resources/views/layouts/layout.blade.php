@@ -129,6 +129,7 @@
 <script src="assets/js/common.js"></script>
 <script src="js/webcam.js"></script>
 
+
 <script src="js/facial.js"></script>
 @yield('scripts')
 </body>

@@ -34,6 +34,11 @@ class PictureController extends Controller
         return view('picture', $data);
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @throws \Exception
+     */
     public function store(Request $request)
     {
         $data = [];
@@ -64,6 +69,25 @@ class PictureController extends Controller
             $data['image'] = $path;
         }
 
+        $python = 'python';
+        $file = 'C:\\projects\\facial-keypoints\\resources\\pymodule\\main.py';
+//        $image = 'C:\\projects\\facial-keypoints\\resources\\pymodule\\Images\\Paar.jpg';
+        $image = public_path($path);
+
+        $cmd = "$python $file $image";
+
+        $process = new \Symfony\Component\Process\Process($cmd);
+        $process->setWorkingDirectory('C:\projects\facial-keypoints\resources\pymodule');
+
+        try {
+            $process->mustRun();
+            $output = $process->getOutput();
+            $output = str_replace('[ INFO:0] Initialize OpenCL runtime...', '', $output);
+        } catch (\Exception $e) {
+            throw $e;
+        }
+
+        $data['points'] = $output;
 
         return view('picture', $data);
     }
