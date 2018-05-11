@@ -70,14 +70,14 @@ class PictureController extends Controller
         }
 
         $python = 'python';
-        $file = 'C:\\projects\\facial-keypoints\\resources\\pymodule\\main.py';
+        $file = 'C:\Projects\facial-keypoints\resources\pymodule\main.py';
 //        $image = 'C:\\projects\\facial-keypoints\\resources\\pymodule\\Images\\Paar.jpg';
         $image = public_path($path);
 
         $cmd = "$python $file $image";
 
         $process = new \Symfony\Component\Process\Process($cmd);
-        $process->setWorkingDirectory('C:\projects\facial-keypoints\resources\pymodule');
+        $process->setWorkingDirectory('C:\Projects\facial-keypoints\resources\pymodule');
 
         try {
             $process->mustRun();

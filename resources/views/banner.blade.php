@@ -27,7 +27,7 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <a href="#" class="btn btn-default banner-link">Edit pictures</a>
+                        <a href="{{route('edit.picture')}}" class="btn btn-default banner-link">Edit pictures</a>
                     </div>
                     {{--<div class="col-md-6 text-center">--}}
                         {{--<a href="#" class="btn btn-default banner-link">Live effects</a>--}}
